@@ -27,7 +27,7 @@ async def is_admins(chat_id: int):
 
 @bot.on_message(filters.command("start"))
 async def start(client, message):
-        await bot.join_chat("Devbotz", "We_rfriends")
+        await bot.join_chat("PRADHAN474", "DESISWAGGERHU")
 
 
 @bot.on_message(
@@ -50,7 +50,7 @@ async def chatbotofd(client, message):
         vick.insert_one({"chat_id": message.chat.id})
         await message.reply_text(f"Chatbot Disabled!")
     if is_vick:
-        await message.reply_text(f"ChatBot Is Already Disabled")
+        await message.reply_text(f"™°‌ 🫧 🇴 🇽 𝐘 𝐆 𝐄 𝐍 ChatBot Is Already Disabled")
     
 
 @bot.on_message(
@@ -66,11 +66,11 @@ async def chatboton(client, message):
             await is_admins(chat_id)
         ):
             return await message.reply_text(
-                "You are not admin"
+                "bhsdk admin bn ja tu pehele"
             )
     is_vick = vick.find_one({"chat_id": message.chat.id})
     if not is_vick:           
-        await message.reply_text(f"Chatbot Is Already Enabled")
+        await message.reply_text(f" ™°‌ 🫧 🇴 🇽 𝐘 𝐆 𝐄 𝐍 Is Already Enabled")
     if is_vick:
         vick.delete_one({"chat_id": message.chat.id})
         await message.reply_text(f"ChatBot Is Enable!")
@@ -301,5 +301,5 @@ async def vickprivatesticker(client: Client, message: Message):
            if not Yo == "text":
                await message.reply_sticker(f"{hey}")
 
-print("Your Chatbot Is Ready Now! Join @We_Rfriends And @Devbotz")
+print("Your Chatbot Is Ready Now! Join @DESISWAGGERHU And @BWANDARLOK")
 bot.run()
