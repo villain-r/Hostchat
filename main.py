@@ -14,7 +14,7 @@ MONGO_URL = os.environ.get("MONGO_URL", None)
 BOT_TOKEN = os.environ.get("BOT_TOKEN",None)
 
 
-bot = Client(STRING, API_ID, API_HASH)
+bot = Client(STRING, API_ID, API_HASH,BOT_TOKEN)
 
 
 async def is_admins(chat_id: int):
